@@ -1,0 +1,141 @@
+ 
+
+
+  <html>
+    <head>
+    <style>
+    #container {
+      position: relative;
+      width: 80%;
+      aspect-ratio: 2/1;
+      margin: auto;
+      
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+    }
+    .realme
+    {
+      display: flex;
+       align-items: center;
+       justify-content: center;
+       border-color: rgb(218, 211, 211); 
+       border-style:solid;
+      border-width: 0.02px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+        background:  rgb(255, 218, 6);
+    }
+    .poco
+    {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(218, 211, 211); 
+    border-style:solid;
+      border-width: 0.02px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px; 
+       background:  rgb(238, 255, 4);
+    }
+    .realme,.poco h6
+    {
+      color:rgb(2, 2, 2);
+    }
+    
+     
+    
+    .realme, .poco {
+      margin: 2px;
+      display: inline-block;
+      scroll-snap-align: start;
+      scroll-margin-left: 20px;
+      
+    }
+    @media only screen and (max-width:850px)
+    {
+      #container {
+      position: relative;
+      height: 200px;
+      width: 80%;
+      aspect-ratio: 2/1;
+      margin: auto;
+      border: solid black 2px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+    }
+    .realme
+    {
+      display: flex;
+       align-items: center;
+       justify-content: center;
+       border-color: rgb(218, 211, 211); 
+       border-style:solid;
+      border-width: 0.02px;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+        background:  rgb(255, 218, 6);
+        aspect-ratio: 4/3;
+    }
+    .poco
+    {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(218, 211, 211); 
+    border-style:solid;
+      border-width: 0.02px;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px; 
+       background:  rgb(238, 255, 4);
+       aspect-ratio: 3/2;
+    }
+    .realme,.poco h6
+    {
+      color:rgb(2, 2, 2);
+    }
+    
+     
+    
+    .realme, .poco {
+      margin: 6px;
+      display: inline-block;
+      scroll-snap-align: start;
+      scroll-margin-left: 20px;
+      
+    }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h3>CSS scroll-margin-left property.</h3>
+    <p>Scroll-margin-left property is set on the child elements, so that snap position on the left side is offset by a distance to the container.</p>
+    
+    <div id="container">
+      <div class="realme"> <h6><strong> rea*me</strong></h6></div> 
+      <div class="poco" > <h6> <strong>PO*O</strong></h6></div>
+      <div class="realme"> <h6><strong> rea*me</strong></h6></div> 
+      <div class="poco" > <h6> <strong>PO*O</strong></h6></div>
+      <div class="realme"> <h6><strong> rea*me</strong></h6></div> 
+      <div class="poco" > <h6> <strong>PO*O</strong></h6></div>
+      <div class="realme"> <h6><strong> rea*me</strong></h6></div> 
+      
+    </div>
+    
+    </body>
+    </html>
+     
+       
+    
+     
+  
+     
+     

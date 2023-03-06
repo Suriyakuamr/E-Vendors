@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body ,html{
+    overflow-wrap: hidden;
+}
+header
+{
+    width: 100%;
+    height: 100px;
+}
+.top1
+{
+     display: flex;
+     align-items: center;
+    width: 100%;
+    margin-left: 510px;
+    background-color: rgb(51, 230, 51);
+    border-radius: 30px;
+    padding:4px 16px;
+    width: 120px; 
+}
+ 
+.top1 h1{
+    color: rgb(255, 246, 246);
+    text-decoration: none;
+    font-size: 3vmin;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top1 img
+{
+    width: 80px;
+    height: 40px;
+}
+.top1:hover
+{
+     transition:1s;
+     transform: scalex(1.2);
+}
+.anc{
+    width: 100%;
+    height: fit-content;
+}
+.hand
+{
+    display: none;
+}
+.anc img{
+    height: 63px;
+    width: 73px;
+}
+.anc ul li {
+    display: inline-block;
+}
+.anc ul li a{
+    text-decoration: none;
+    margin:75px;
+    color: rgb(197, 105, 18);
+}
+.anc ul{
+    margin-top: 20px;
+    height: 15px;
+}
+.anc h4{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: left;
+}
+.anc a:hover{
+     color:  rgb(51, 230, 51);
+}
+.anc ul li a:active
+{
+    color:  rgb(51, 230, 51);
+}
+.fonts
+{
+    text-align: center;
+    padding: 15px;
+}
+.content{
+    margin: auto;
+    overflow: auto;    
+}
+.content img{
+   width: 230px;
+   height: 245px;
+}
+.content div {
+    display: grid;
+    grid-template-columns: repeat(5,270px);
+    margin-left:15px ;
+    margin-right: 20px;
+    margin-top: 105px;
+    padding-inline-start: 5px;
+}
+.menu-btn{
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:850px){
+    .top1
+    {
+        margin-left: 65px;
+    }
+    header
+    {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:110px){
+    header
+    {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:900px)
+{
+    .hand{
+        display: block;
+        cursor: pointer;
+    }
+    .hand .line
+    {
+        width: 30px;
+        height: 3px;
+        background:red;
+        margin: 6px 0;
+    }
+    .anc
+    {
+        height:  0;
+         position: absolute;
+         top: 80px;
+         left: 0;
+         right: 0;
+         width: 352px;
+         background: black;
+         transition: 0.2s;
+         overflow: hidden;
+    }
+    .anc .active
+    {
+        height:600px ;
+    }
+    .anc ul{
+        padding: 8px 59px;
+        display: block;
+        width: fit-content;
+        margin: 50px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+         opacity: 0;
+    }
+    .anc .active ul
+    {
+        opacity:1;
+    }
+    .anc ul li a
+    {
+        color: blue;
+        margin-bottom: 12px;
+    }
+     
+}
